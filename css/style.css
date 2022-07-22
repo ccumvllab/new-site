@@ -1319,6 +1319,17 @@ a:hover {
   margin-bottom: 25px;
 }
 
+#team-research .container .research-block {
+  padding-bottom: 60px;
+}
+
+#team-research .container .row .col-md-6 img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FFFFFF;
+}
+
 /*=================================================================
   Our Team
 ==================================================================*/
@@ -1559,6 +1570,13 @@ a:hover {
   font-size: 20px;
   line-height: 1.5;
   text-transform: capitalize;
+}
+
+.post-block .content p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .note .media-wrapper {
