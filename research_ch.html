@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Machine Vision and Learning Lab</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+
+  <!-- CSS
+		================================================== -->
+  <!-- Fontawesome Icon font -->
+  <link rel="stylesheet" href="plugins/themefisher-font/style.css">
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <!-- Magnific popup css -->
+  <link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="plugins/slick-carousel/slick.css">
+  <link rel="stylesheet" href="plugins/slick-carousel/slick-theme.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body id="home" data-spy="scroll" data-target=".navbar-nav" data-offset="80">
+  <!--
+	Start Preloader
+	==================================== -->
+  <div class="preloader">
+    <div class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+  </div>
+  <!-- End Preloader
+	==================================== -->
+
+  <!--
+Fixed Navigation
+==================================== -->
+  <header id="navigation" class="navigation">
+    <div class="container">
+      <div class="navbar-header w-100">
+        <nav class="navbar navbar-expand-lg navbar-dark px-0">
+          <!-- logo -->
+          <a class="navbar-brand logo" href="index_ch.html">
+            <img src="images/logo.png" alt="Website Logo" />
+          </a>
+          <!-- /logo -->
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar01"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbar01" data-toggle="collapse" data-target=".navbar-collapse">
+            <ul class="navbar-nav navigation-menu ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index_ch.html#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index_ch.html#research">Research</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index_ch.html#news">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index_ch.html#members">Members</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index_ch.html#contact-us">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://ccumvllab.github.io/site/index.html">
+                  Old Website</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--
+End Fixed Navigation
+==================================== -->
+
+  <section id="team-research" class="parallax-section section section-bg overly">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-12">
+          <!-- section title -->
+          <div class="title text-center">
+            <h2>Our <span class="color">Researches</span></h2>
+            <h3>實驗室近年研究方向與成果</h3>
+            <div class="border"></div>
+          </div>
+          <!-- /section title -->
+        </div> <!-- /end col-lg-12 -->
+      </div> <!-- end row -->
+      <div class="row research-block">
+        <div class="col-md-6">
+          <img class="img-fluid" src="images/research/calligraphy.png" alt="">
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <h2>機器人寫書法</h2>
+          <p>
+            此項研究包含藝術創作、機器人自動化、及人工智慧三領域，透過AI技術建構名家書寫風格，以手臂臨摹出人類書寫動作。
+            <br>
+            <strong>字體風格轉換:</strong>
+            <br>
+            &emsp;在書法字體轉換過程，改進以生成對抗網路為基礎的CycleGAN，突破單一模型只能轉換一種不同字體的限制，
+            並且透過收集書寫時的手腕動作，讓機器手臂能夠模擬書法家的寫法來將轉換後的書法字寫出。
+            <br>
+            <strong>機械手臂骨架軌跡和筆順生成:</strong><br>
+            &emsp;利用風格轉換後的字體進行細線化，讓機器手臂模擬書法家的書寫動作將書法字寫出，我們需要將模型轉換後字體的座標、
+            寬度…等相關資訊搭配收集的書寫動作的六軸資料，使用筆順學習的方法將書法筆順的六軸序列資料提供給機器手臂。
+          </p>
+        </div>
+      </div>
+
+      <div class="row research-block">
+        <div class="col-md-6">
+          <img class="img-fluid" src="images/research/makeup-attack-628x279.png" alt="">
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <h2>將攻擊資訊包含在化妝中對深度學習模型進行攻擊</h2>
+          <p>
+            機器學習的發展非常迅速，在電腦視覺和自然語言處理方面都有很好的成果。
+            有許多深度學習技術被運用在人類日常生活當中例如自動駕駛汽車和人臉辨識系統。
+            如今，人類日常生活漸漸的依賴於深度神經網路可能會導致嚴重的後果，因此神經網路的安全性就變的很重要。
+            因此展現深度神經網路其實有明顯的弱點，我們提出了一種基於生成對抗網絡的方法來生成可以欺騙人臉識別系統的臉部化妝圖片。
+            我們在人類無法察覺的異常化妝照片結果中隱藏了攻擊的擾動信息。實驗結果顯示，
+            我們不但可以生成高畫質的臉部化妝圖像，並且我們的攻擊結果在人臉識別系統中具有很高的攻擊成功率。
+          </p>
+        </div>
+      </div>
+
+      <div class="row research-block">
+        <div class="col-md-6">
+          <img class="img-fluid" src="images/research/music-game-628x396.png" alt="">
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <h2>利用生成對抗網路產生音樂節奏遊戲</h2>
+          <p>
+            音樂節奏遊戲是目前非常熱門的遊戲，我們提出了基於生成對抗網路的方法產生音樂節奏遊戲譜面。
+            音樂被分離為人聲與配樂兩部分，使產生的譜面更貼近真實譜面。 
+            模型包含兩種生成對抗網路的概念：為了加入音樂資訊而採用的Conditional Generative Adversarial Nets (CGANs)
+            以及使模型更好收斂的Improved Wasserstein GAN (WGAN-GP)。
+          </p>
+        </div>
+      </div>
+
+      <div class="row research-block">
+        <div class="col-md-6">
+          <img class="img-fluid" src="images/research/scribble-lines-to-painting-520x237.jpg" alt="">
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <h2>人人都是藝術家! 塗鴉生成畫作</h2>
+          <p>
+            我們提出一個全自動化的系統，可以將隨意畫的塗鴉轉化成一幅畫作。
+            然而這是一個嚴峻的挑戰，原因在於輸入的塗鴉可能是非常雜亂並且隱藏著多重物件的， 
+            因此找到這些重複的線條與多重的物件之間的關聯性並不是件簡單的事。在系統當中，
+            我們結合使用了 selective search、sparse coding 與 Convolutional neural network (CNN)， 
+            其中我們運用 selective search 來找尋塗鴉當中可能是物件的部分；
+            接著利用 sparse coding 來找到相對應的元素；最後藉由 CNN 套上欲轉換的風格。
+            最終的實驗結果顯示我們所使用的方法有優越的性能並且產生具有藝術性的作品。
+          </p>
+        </div>
+      </div>
+
+      <div class="row research-block">
+        <div class="col-md-6">
+          <img class="img-fluid" src="images/research/full-model-2-844x484.jpg" alt="">
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <h2>衣著樣式分析與流行元素擷取</h2>
+          <p>
+            隨著衣服和配飾樣式越來越多，無論實體或網路店家，消費者要在眾多樣式中找尋自己喜好的樣式將花費大量的時間，
+            因此若消費者能給一些喜歡的服飾照片，系統分析照片中服飾找出相關資訊（如店家地址、搭配相關配飾等）。
+            對店家而言，若能收集到顧客相關服裝風格就可以根據這份資訊調整進貨款式和店裡的擺設，
+            進一步根據消費者的喜好推薦相關配飾給消費者並節省消費者去尋找能搭配相關配飾時間。
+            對成衣商而言，能透過各個店家收集的資料加以分析就能知道那些款式受歡迎那些款式不受歡迎，進而成為下一批新款式的設計參考。
+          </p>
+        </div>
+      </div>
+
+      <div class="row research-block">
+        <div class="col-md-6">
+          <img class="img-fluid" src="images/research/60359706-2364327760514781-6025843136377389056-n-641x285.png"
+            alt="">
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <h2>基於感測器的復健動作之深度學習識別與評估</h2>
+          <p>
+            本方法中，我們的目標是在好、中、壞三個評等中，評估四種復健動作，我們提出了一個創新的方法，是藉由學習每個類別的最好特徵表示。
+            我們的想法是設計一個評估矩陣，而這個矩陣的每個元素對應一個動作的一個評等。
+            藉由在一個元素中設置最大數字，評估矩陣可以與深度學習模型的輸出層一起使用，以在特定級別推斷該練習的最佳特徵。
+            評估分數是通過檢查當前特徵的距離度量和該類的最佳特徵來獲得。我們還為復健動作評估收集了一個新的復健動作數據集。
+             它包含四個不同的復健動作，分別由復健醫師定義。
+          </p>
+        </div>
+      </div>
+
+      <div class="row research-block">
+        <div class="col-md-6">
+          <img class="img-fluid" src="images/research/outdoor-low-resolution-face-recognition-554x261.png" alt="">
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <h2>戶外低解析人臉辨識</h2>
+          <p>
+            此計畫目標是對於低解析度的人臉影像進行比對，驗證是否為同一人。
+            現今在未受限制的環境中，人臉辨識的效能常會因為姿勢的因素而下降，所以我們建立一個姿勢正規化的方法來復原任意的臉部角度，
+            藉此回復任意狀態的臉部角度以增加人臉辨識的效能。
+            而此計畫使用了兩種 Caffe 之模型架構: Matching-Convolutional NeuralNetwork (M-CNN)、Siamese Neural Network (SNN)。
+            最後經實驗結果得到 SNN 模型準確率達 90% 以上，與 M-CNN 相較之下較高。
+          </p>
+        </div>
+      </div>
+
+      <div class="row research-block">
+        <div class="col-md-6">
+          <img class="img-fluid" src="images/research/image-multi-label-classification-628x461.jpg" alt="">
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <h2>多重屬性影像分類</h2>
+          <p>
+            進行人臉圖片分類時，欲辨識的圖片中難免會有一些配件，
+            如：太陽眼鏡、圍巾、耳環等，或是外在環境因素，如：光線、角度等， 這些配件或是環境因素在人臉圖片中稱之為多重屬性。
+            本實驗室利用既有的 Local Discriminant Embedding (LDE) 演算法作為延伸，達到多重屬性分類的目的。
+          </p>
+        </div>
+      </div>
+
+      <div class="row research-block">
+        <div class="col-md-6">
+          <img class="img-fluid" src="images/research/sparse-coding-628x463.jpg" alt="">
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <h2>稀疏編碼 Sparse Coding</h2>
+          <p>
+            近年來 sparse coding 在電腦視覺以及影像處理的領域相當受到歡迎，sparse coding 由輸入資料、dictionary 以及輸入資料對應的線性組合組成。
+            sparse coding 可以用來影像除噪 (denoising)、影像復原 (restoration)，以及影像分類 (classification) 等工作。
+            本實驗室基於稀疏編碼著重於二個研究方向：多重屬性影像分類以及巨量資料的稀疏編碼。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end Contact Area
+  ========================================== -->
+  <footer id="footer" class="bg-one">
+    <div class="container">
+      <div class="row wow fadeInUp" data-wow-duration="500ms">
+        <div class="col-lg-12">
+
+          <!-- Footer Social Links -->
+          <div class="social-icon">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCJr6UDkcy_d3Ox_WBJibdNg"><i
+                    class="tf-ion-social-youtube"></i></a></li>
+            </ul>
+          </div>
+          <!--/. End Footer Social Links -->
+
+          <!-- copyright -->
+          <div class="copyright text-center">
+            <a href="index_ch.html">
+              <img src="images/logo.png" width="40px" height="40px" />
+            </a>
+
+            <p class="mt-3">Copyright
+              &copy;
+              <script>
+                document.write(new Date().getFullYear())
+              </script> CCU MVL Lab. All Rights Reserved. <br> Designed &amp; Developed by JeffLin.
+            </p>
+          </div>
+          <!-- /copyright -->
+
+        </div> <!-- end col lg 12 -->
+      </div> <!-- end row -->
+    </div> <!-- end container -->
+  </footer> <!-- end footer -->
+
+  <!--
+	Essential Scripts
+	=====================================-->
+
+  <!-- Main jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 3.1 -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- Slick Carousel -->
+  <script src="plugins/slick-carousel/slick.min.js"></script>
+  <!-- Portfolio Filtering -->
+  <script src="plugins/filterzr/jquery.filterizr.min.js"></script>
+  <!-- Magnific popup -->
+  <script src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+  <!-- Google Map API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+  <!-- wow.min Script -->
+  <script src="plugins/wow/wow.min.js"></script>
+  <!-- Custom js -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
