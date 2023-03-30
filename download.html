@@ -94,16 +94,16 @@ Sticky Navigation
 						data-target=".navbar-collapse">
 						<ul class="navbar-nav navigation-menu ml-auto">
 							<li class="nav-item">
-								<a class="nav-link" href="index_ch.html">Home (CH)</a>
+								<a class="nav-link" href="index.html">Home (EN)</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#research">Research</a>
+								<a class="nav-link" href="index_ch.html#research">Research</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#news">News</a>
+								<a class="nav-link" href="index_ch.html#news">News</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#members">Members</a>
+								<a class="nav-link" href="index_ch.html#members">Members</a>
 							</li>
 							
 							<li class="nav-item">
@@ -111,7 +111,7 @@ Sticky Navigation
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link" href="#contact-us">Contact</a>
+								<a class="nav-link" href="index_ch.html#contact-us">Contact</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="https://ccumvllab.github.io/site/">
@@ -134,22 +134,22 @@ End Sticky Navigation
 	<br>
 
 	<div class="container">
-		<div class="row research-block">
+		<div class="row research-block" style="padding-top: 3pt;text-indent: 0pt;text-align: left;color:white">
         <div class="col-md-6">
           <img class="img-fluid" src="images/research/Dataset_web.png" alt="">
         </div>
         <div class="col-md-6 mt-4 mt-md-0">
-			<h1>CCUCSMVL-vehicle-reid DATASET</h1>
-			<p>Introduction:</p>
-			<p>This dataset is intended for vehicle re-identification purposes.</p>
-			<p style="padding-top: 3pt;text-indent: 0pt;text-align: left;">The vehicle route
+			<h1 style="color:aqua">CCUMVL-Vehicle-ReID DATASET</h1>
+			<p style="color:aqua">Introduction:</p>
+			<p style="padding-top: 3pt;text-indent: 0pt;text-align: left;color:white">This dataset is intended for vehicle re-identification purposes.</p>
+			<p style="padding-top: 3pt;text-indent: 0pt;text-align: left;color:whitesmoke">The vehicle route
 				starts from the Taibao Branch of the Chiayi County Railway Police Bureau(612, Chiayi County, Taibao City, 23),
 				along the Gaoxie West Road extension of Jiapu Highway(No. 168, Gaotie W Rd, Taibao City, Chiayi County, 612) to
 				the Puzi Gas Station(Fumaopuzi Station), and a total of 8 cameras are used to capture the footage along the way.
 			</p>
 			<p style="padding-top: 3pt;text-indent: 0pt;text-align: left;">The shooting period was on
 				September 2, 3, 24, 25, October 1, 2, 15, and 16, 2022, with 2 shots in the afternoon and 1 shot in the evening,
-				for a total of 3 shooting periods.&quot;</p><br/>
+				for a total of 3 shooting periods.</p><br/>
         </div>
 		<div>
 			<p style="padding-left: 20pt;">The videos are captured from 3 time periods for each date, namely Afternoon-1, Afternoon-2, Evening.</p>
@@ -171,8 +171,8 @@ End Sticky Navigation
 				<li style="padding-left: 20pt;">camera6 18:11:00 ~ 18:14:00, camera7 18:12:00 ~ 18:15:00, camera8 18:13:00 ~ 18:16:00</li>
 			</ul>
 			<p style="text-indent: 0pt;text-align: left;"><br /></p>
-			<p style="padding-left: 20pt;">Use the YOLO model to mark the Bounding Box, then recognize the color and type of each car, and record and organize them as follows.</p>
-			<p style="padding-left: 20pt;">Content in the directory:</p>
+			<p style="padding-left: 20pt;color:aqua">Use the YOLO model to mark the Bounding Box, then recognize the color and type of each car, and record and organize them as follows.</p>
+			<p style="padding-left: 20pt;color:aqua">Content in the directory:</p>
 			<ul style="padding-left: 20pt;">
 				<li style="line-height: 150%">camera_Dist.txt：Describe the distance matrix between any two cameras.</li>
 				<li style="line-height: 150%">camera_ID.txt：ID of 8 cameras.<br/>From west to east: c001 c002 c003 c004 c005 c006 c007 c008</li>
@@ -207,20 +207,20 @@ End Sticky Navigation
 				<li style="line-height: 150%">query_label.xml：4955 records which contains query image label：image name, car ID, camera ID, color, type.</li>
 				<li style="line-height: 150%">gallery_label.xml：5611 records which contains test image label：image name, car ID, camera ID, color, type.</li>
 				<li style="line-height: 150%">train_label.xml：20740 records which contains train image label：image name, car ID, camera ID, color, type.</li>
-				<li style="line-height: 150%">嘉義路線圖.png/Chiayi_vehicle_route.png：locate the cameras with google map.</li>
+				<li style="line-height: 150%">Chiayi_vehicle_route(EN/zh-TW).png：locate the cameras with google map.</li>
 				<li style="line-height: 150%">test/query：It's a directory. It contains 4955 images as query-image-set.</li>
 				<li style="line-height: 150%">test/gallery：It's a directory. It contains 5611 images as gallery-image-set.</li>
 				<li style="line-height: 150%">train：It's a directory. It contains 20740 images as train-image-set.</li>
 			</ul>
 		  <p style="padding-left: 20pt;text-indent: 0pt;text-align: left;"><br /></p>
-		  <p style="padding-left: 20pt;text-indent: 0pt;text-align: left;">Permission Granted:</p>
+		  <p style="padding-left: 20pt;text-indent: 0pt;text-align: left;color:aqua">Permission Granted:</p>
 		  <p style="padding-left: 20pt;text-indent: 0pt;line-height: 123%;text-align: left;">This dataset is
 			  only provided for personal learning and academic purposes. Commercial use and other improper/illegal uses are
 			  prohibited.</p>
-		  <p style="padding-left: 20pt;text-indent: 0pt;line-height: 123%;text-align: left;">CCUCSMVL owns the right to
+		  <p style="padding-left: 20pt;text-indent: 0pt;line-height: 123%;text-align: left;">CCUMVL owns the right to
 			  modify/update/interpret the statement and content version of this dataset.</p>
 		  <p style="padding-left: 20pt;text-indent: 0pt;line-height: 123%;text-align: left;">If the use of this dataset causes
-			  losses to a third party, the user shall bear the responsibility, and CCUCSMVL will not be held responsible.</p>
+			  losses to a third party, the user shall bear the responsibility, and CCUMVL will not be held responsible.</p>
 	  
       </div>
 	</div>
