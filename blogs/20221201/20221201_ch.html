@@ -41,6 +41,15 @@
   <link rel="stylesheet" href="../../plugins/slick-carousel/slick-theme.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    /* 懸掛縮排：第一行靠左，後續換行對齊句首 */
+    .hanging {
+      display: block;
+      padding-left: 1.5em; /* 調整這個值以對齊數字後的句首 */
+      text-indent: -1.5em; /* 與 padding-left 相同的負值 */
+      white-space: normal;
+    }
+  </style>
 
 
 </head>
@@ -124,7 +133,7 @@ End Fixed Navigation
                 <font size="6" face="標楷體">指導教授: 江振國 博士</font><br>
                 <p align="left">
                     <font size="5" face="標楷體">
-                        實驗室研究方向:<br>
+                        <!-- 實驗室研究方向:<br>
                         實驗室以AI相關技術為主要研究方向，而目前以AI技術在電腦視覺的應用，以及AI技術在時序性資料的應用為主，畢業論文可找以上兩個相關的方向，或是做計劃相關的方向。<br><br>
 
                         計畫:<br>
@@ -145,13 +154,64 @@ End Fixed Navigation
                         &nbsp;&nbsp;&nbsp;&nbsp;3.	Paper meeting: 報告自己的論文研究進度，有需要的同學參加<br><br>
 
                         新生建議:<br>
-                        目前實驗室使用遠端連線到實驗室共用的Ubuntu運算電腦，並利用Pytorch套件，來進行AI相關技術的開發，因此建議可以先修習機器學習、深度學習之基礎理論，以及學習Python、Pytorch之使用，目前網路上有非常多的教學資源可以利用，實驗室也會在開學前進行新生訓練。
+                        目前實驗室使用遠端連線到實驗室共用的Ubuntu運算電腦，並利用Pytorch套件，來進行AI相關技術的開發，因此建議可以先修習機器學習、深度學習之基礎理論，以及學習Python、Pytorch之使用，目前網路上有非常多的教學資源可以利用，實驗室也會在開學前進行新生訓練。 -->
+                        <strong>[實驗室研究方向]</strong><br>
+
+                        MVL實驗室過去主要開發各種深度學習模型，解決兩大面向的問題:<br>
+                         <span class="hanging">1. 影像為主的各種電腦視覺問題，包含行人重辨識、車輛追蹤、醫學影像分析等；</span><br>
+                         <span class="hanging">2. 數據型的感測資料用於預測問題，例如用於智慧製造的機台數據，分析品質、良率或瑕疵分析。利用IMU感測資料，做動作辨識與復健治療。</span><br><br>
+                      
+
+                        實驗室的最新研究方向主要以大語言模型建置為主，包含三個面向: <br>
+                         <span class="hanging">1. 單一大語言模型建置，如結合中正大學的所有法規，建置一個問答、檢索、草擬法規的大語言模型，能回答各式問題。</span><br>
+                         <span class="hanging">2. 結合影像的大語言模型 (Vision-Language Model)，語言模型能理解影像內容，進一步提供問答功能，如工業瑕疵影像分析，輸入照片後，模型能回答瑕疵分類、瑕疵成因與改善方案。</span><br>
+                         <span class="hanging">3. 結合大語言與多模態模型，包含文字、聲音、照片與影片生成，例如醫生健康問答的大語言模型，能客製化醫生的聲音，由大語言模型Q&A的回覆，將回覆語音生成醫生的影片。</span><br><br>
+
+                        <strong>[產學合作計畫]</strong><br>
+                        一年級的學生會協助或承接二年級學生的產學合作計畫。實際負責的數量取決於實驗室實際的計畫件數，每個人需要主責 1～2 個專案，並協助 1～2 個專案。碩一新生主要以修課為主，並依能力協助計畫的進行(例如協助跑一些實驗結果)，碩一下會開始變成計畫執行主力。<br><br>
+
+                        <strong>[課程助教]</strong><br>
+                          一年級學生需要協助老師的課程教學助理工作。教學助理的人數則依系上的公告為準。<br><br>
+
+                        <strong>[協助實驗室事務]</strong><br>
+                        一年級學生需要協助處理實驗室相關事務，例如報帳、管理實驗室財務、維護實驗室網站、管理實驗室設備、安排實驗室休閒活動等。具體分工將依當年度錄取人數及實驗室事務調整情況而定。<br><br>
+
+                        <strong>[修課]</strong><br>
+                        在研究所階段需要修習老師所開授的所有課程，包含電腦視覺、機器學習。除了必修課程之外，其餘課程主要需要與實驗室的研究相關。<br><br>
+
+                        <strong>[實驗室會議]</strong>   下列會議每周一次:<br>
+
+                        計畫會議（Project meeting）：回報計畫進度，所有學生都必須出席。<br>
+
+                        實驗室會議（Lab meeting）：每週由 1～2 人輪流報告論文，所有實驗室成員皆需參加。<br>
+
+                        論文會議（Paper meeting）：碩二同學報告論文進度。<br><br>
+
+                        <strong>[實驗室薪資]</strong><br>
+                        碩一上學期: 每人月薪$6000；<br>
+                        碩一下學期: 每人月薪$8000；<br>
+                        碩二整年: 每人月薪$12000；<br><br>
+
+                        <strong>[新生建議]</strong><br>
+                        目前本實驗室是以遠端連線方式，使用實驗室共用的 Ubuntu 運算主機，並搭配 Pytorch 套件開發 AI 相關技術。因此，建議同學先行學習機器學習與深度學習的基礎理論，同時學習 Python 與 Pytorch的模型建置方式。目前網路上已有相當多的教學資源可供自學，實驗室也會在開學前提供新生訓練課程。建議大四下到開學前能先有建置大語言模型的能力，包含環境架設、訓練資料建置、模型訓練、微調優化、RAG等使用能力。<br><br>
+
+                        <strong>[碩論方向]</strong><br>
+                        1.由產學合作計畫題目變成碩論題目<br>
+                        2.選擇自己有興趣的題目<br>
+                        3.與老師和學長共同討論<br><br>
+
+                        <strong>[常見Q&A]</strong><br>
+                        1.實驗室是否有每天固定到實驗室時間的規定?<br>
+                        ANS: 無。實驗室以責任制為主~<br><br>
+
+                        2.碩班畢業是否有特殊門檻?<br>
+                        ANS:無。主要以同學能力為主，能力強的同學會要求較高的論文品質。
                     </font>
                 </p>
            </body>
           <ul class="list-inline mb-50">
             <!-- <li class="list-inline-item">Thomas Jonson</li> -->
-            <li class="list-inline-item">December 01, 2022</li>
+            <li class="list-inline-item">November 28, 2025</li>
           </ul>
           
           
