@@ -42,6 +42,16 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="../../css/style.css">
 
+  <style>
+    /* 懸掛縮排（hanging indent）for long lines starting with numbers */
+    .hanging {
+      display: block;
+      padding-left: 1em;
+      text-indent: -1em;
+      white-space: normal;
+    }
+  </style>
+
 
 </head>
 
@@ -123,7 +133,7 @@ End Fixed Navigation
                <font size="6" face="Times New Roman">Thesis advisor: PhD.Chiang, Chen-Kuo</font><br>
                <p align="left">
                    <font size="5" face="Times New Roman">
-                       Laboratory research direction:<br>
+                       <!-- Laboratory research direction:<br>
                        The main research direction of the laboratory is AI-related technology, and currently it focuses on the application of AI technology in computer vision and the application of AI technology in time-series data. You can find the above two related directions for your graduation thesis, or make plans related to it. <br><br>
 
                        Project:<br>
@@ -144,13 +154,81 @@ End Fixed Navigation
                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.Paper meeting: Report on the research progress of your thesis, and students who need it will participate<br><br>
 
                        New Student Advice:<br>
-                       At present, the laboratory uses a remote connection to the Ubuntu computing computer shared by the laboratory, and uses the Pytorch package to develop AI-related technologies. Therefore, it is recommended to learn the basic theory of machine learning and deep learning, as well as learn Python and Pytorch. There are currently a lot of teaching resources available on the Internet, and the laboratory will also conduct freshmen training before the start of the school year.
+                       At present, the laboratory uses a remote connection to the Ubuntu computing computer shared by the laboratory, and uses the Pytorch package to develop AI-related technologies. Therefore, it is recommended to learn the basic theory of machine learning and deep learning, as well as learn Python and Pytorch. There are currently a lot of teaching resources available on the Internet, and the laboratory will also conduct freshmen training before the start of the school year. -->
+                       <strong>[Lab Research Directions]</strong><br>
+
+                        In the past, the MVL Lab has mainly focused on developing various deep learning models to address two major categories of problems:<br>
+
+                        <span class="hanging">1. Image-based computer vision tasks, including person re-identification, vehicle tracking, and medical image analysis.</span>
+
+                        <span class="hanging">2. Sensor- or data-based prediction problems, such as using machine data from smart manufacturing to analyze product quality, yield, or defect patterns. We also use IMU sensor data for action recognition and rehabilitation applications.</span><br>
+
+                        The lab’s latest research directions focus primarily on building large language models (LLMs) in three aspects:<br>
+
+                        <span class="hanging">1. Building standalone large language models, such as integrating all regulations of National Chung Cheng University to develop an LLM for question answering, retrieval, and drafting regulations, capable of answering a wide range of queries.</span>
+
+                        <span class="hanging">2. Vision-Language Models (VLMs) that combine images with language, enabling the language model to understand visual content and provide Q&A functions. For example, in industrial defect image analysis, given an input image, the model can answer questions about defect type, possible causes, and suggested improvement measures.</span>
+
+                        <span class="hanging">3. Combining LLMs with multimodal models, including text, audio, image, and video generation. For instance, building a medical Q&A LLM that can be customized with a specific doctor’s voice, and then generating a talking-head video of the doctor delivering the LLM’s response.</span><br>
+
+                        <strong>[Industry–Academia Collaboration Projects]</strong><br>
+
+                        First-year master’s students will assist with or take over industry–academia collaboration projects from second-year students. The actual number of projects depends on the lab’s current project load. Each student is expected to take primary responsibility for 1–2 projects and assist on another 1–2 projects.<br>
+                        In the first semester of the master’s program, students mainly focus on coursework and help with projects according to their abilities (for example, running experiments and producing results). From the second semester onward, they will gradually become the main execution force for the projects.<br><br>
+
+                        <strong>[Course Teaching Assistants]</strong><br>
+
+                        First-year students are required to help with the instructor’s course teaching assistant duties. The number of TAs will follow the official announcement of the department.<br><br>
+
+                        <strong>[Assisting with Laboratory Affairs]</strong><br>
+
+                        First-year students are also expected to help handle laboratory administrative affairs, such as reimbursement and accounting, managing lab finances, maintaining the lab website, managing lab equipment, and organizing lab social or recreational activities. The detailed division of labor will depend on the number of students admitted each year and adjustments in lab affairs.<br><br>
+
+                        <strong>[Coursework]</strong><br>
+
+                        At the graduate level, students are required to take all courses offered by the advisor, including Computer Vision and Machine Learning. In addition to required courses, other electives should mainly be related to the laboratory’s research directions.<br><br>
+
+                        <strong>[Lab Meetings]</strong> – Held once a week:<br>
+
+                        Project Meeting: Report project progress; all students must attend.<br>
+
+                        Lab Meeting: Each week, 1–2 students take turns presenting research papers; attendance is required for all lab members.<br>
+
+                        Paper Meeting: Second-year master’s students report on the progress of their thesis research.<br><br>
+
+                        <strong>[Stipend]</strong><br>
+
+                        First-year, fall semester: NT$6,000 per month per student<br>
+                        First-year, spring semester: NT$8,000 per month per student<br>
+                        Second-year (full year): NT$12,000 per month per student<br><br>
+
+                        <strong>[Suggestions for New Students]</strong><br>
+
+                        Currently, our lab primarily uses remote access to a shared Ubuntu computing server, together with the PyTorch framework to develop AI-related technologies. Therefore, we recommend that students first learn the basic theories of machine learning and deep learning, as well as how to build models using Python and PyTorch. There is already a wealth of online learning resources available, and the lab will also provide training courses for new students before the semester begins.<br>
+
+                        It is recommended that, from the second half of the senior undergraduate year until the start of graduate school, students develop the ability to build large language models, including environment setup, training data preparation, model training, fine-tuning and optimization, and using RAG (Retrieval-Augmented Generation).<br><br>
+
+                        <strong>[Master’s Thesis Directions]</strong><br>
+
+                        Transforming a topic from an industry–academia collaboration project into a master’s thesis.
+
+                        Choosing a topic that matches your personal research interests.
+
+                        Discussing and refining the topic together with the advisor and senior lab members.<br><br>
+
+                        <strong>[Frequently Asked Questions]</strong><br>
+
+                        Is there a requirement to be physically present in the lab at fixed hours every day?<br>
+                        ANS: No. The lab mainly follows a responsibility-based system.<br><br>
+
+                        Are there any special graduation requirements for the master’s program?<br>
+                        ANS: No formal extra requirements. Expectations mainly depend on each student’s ability; students with stronger abilities will be expected to produce higher-quality theses.
                    </font>
                </p>
           </body>
           <ul class="list-inline mb-50">
             <!-- <li class="list-inline-item">Thomas Jonson</li> -->
-            <li class="list-inline-item">December 01, 2022</li>
+            <li class="list-inline-item">November 28, 2025</li>
           </ul>
       </div>
     </div>
