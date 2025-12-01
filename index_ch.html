@@ -111,7 +111,8 @@ Sticky Navigation
 						data-target=".navbar-collapse">
 						<ul class="navbar-nav navigation-menu ml-auto">
 							<li class="nav-item">
-								<a class="nav-link" href="index.html">Home (EN)</a>
+								<!-- set preference to English and open English index without being redirected back -->
+								<a class="nav-link" href="index.html?lang=en" onclick="localStorage.setItem('siteLang','en')">Home (EN)</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#research">Research</a>

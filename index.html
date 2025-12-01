@@ -20,10 +20,32 @@
 		content="National Chung Cheng University, Department of Computer Science and Information Engineering, Machine Vision and Learning Lab, CCU MVL LAB, 江振國, 江振國實驗室, 江振國Lab">
 	<meta name="author" content="CCU MVL LAB">
 	<meta name="generator" content="Themefisher Meghna Template v1.0">
-
-	<!-- Redirect root index to Chinese homepage -->
-	<meta http-equiv="refresh" content="0;url=index_ch.html">
-
+    
+		<!-- Smart default: redirect to Chinese homepage unless user prefers English -->
+		<script>
+			(function(){
+				try{
+					const params = new URLSearchParams(location.search);
+					if (params.get('lang') === 'en') {
+						localStorage.setItem('siteLang','en');
+						return;
+					}
+					if (params.get('lang') === 'zh') {
+						localStorage.setItem('siteLang','zh');
+					}
+					const pref = localStorage.getItem('siteLang');
+					if (pref === 'en') return; // user prefers English
+					if (location.pathname.endsWith('index_ch.html')) return; // already Chinese page
+					const lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+					if (pref === 'zh' || lang.startsWith('zh')) {
+						location.replace('index_ch.html');
+					}
+				}catch(e){
+					// if anything fails, do nothing
+					console.error(e);
+				}
+			})();
+		</script>
 	<!-- Open Graph Tag Metas
 		  ================================================== -->
 	<meta property="og:title" content="Machine Vision and Learning Lab | 機器視覺與學習實驗室 | 中正大學" />
@@ -114,7 +136,8 @@ Sticky Navigation
 						data-target=".navbar-collapse">
 						<ul class="navbar-nav navigation-menu ml-auto">
 							<li class="nav-item">
-								<a class="nav-link" href="index_ch.html">Home (CH)</a>
+								<!-- set preference to Chinese when user explicitly clicks -->
+								<a class="nav-link" href="index_ch.html?lang=zh" onclick="localStorage.setItem('siteLang','zh')">Home (CH)</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#research">Research</a>
