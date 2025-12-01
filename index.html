@@ -21,28 +21,21 @@
 	<meta name="author" content="CCU MVL LAB">
 	<meta name="generator" content="Themefisher Meghna Template v1.0">
     
-		<!-- Smart default: redirect to Chinese homepage unless user prefers English -->
+		<!-- Smart default: redirect to Chinese homepage unless user explicitly requests English via ?lang=en -->
 		<script>
 			(function(){
 				try{
 					const params = new URLSearchParams(location.search);
-					if (params.get('lang') === 'en') {
-						localStorage.setItem('siteLang','en');
-						return;
-					}
-					if (params.get('lang') === 'zh') {
-						localStorage.setItem('siteLang','zh');
-					}
-					const pref = localStorage.getItem('siteLang');
-					if (pref === 'en') return; // user prefers English
-					if (location.pathname.endsWith('index_ch.html')) return; // already Chinese page
+					// If URL explicitly requests English, don't redirect
+					if (params.get('lang') === 'en') return;
+					// Avoid redirect loop when already on Chinese page
+					if (location.pathname.endsWith('index_ch.html')) return;
 					const lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-					if (pref === 'zh' || lang.startsWith('zh')) {
+					if (lang.startsWith('zh')) {
 						location.replace('index_ch.html');
 					}
 				}catch(e){
-					// if anything fails, do nothing
-					console.error(e);
+					// fail silently
 				}
 			})();
 		</script>
@@ -136,8 +129,7 @@ Sticky Navigation
 						data-target=".navbar-collapse">
 						<ul class="navbar-nav navigation-menu ml-auto">
 							<li class="nav-item">
-								<!-- set preference to Chinese when user explicitly clicks -->
-								<a class="nav-link" href="index_ch.html?lang=zh" onclick="localStorage.setItem('siteLang','zh')">Home (CH)</a>
+								<a class="nav-link" href="index_ch.html?lang=zh">Home (CH)</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#research">Research</a>
